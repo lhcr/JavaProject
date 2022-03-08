@@ -17,6 +17,24 @@ public class Caneta {
     protected boolean tampada;
     protected String material;
 
+
+    //CONSTRUTOR
+    public void Caneta(){
+        this.setMarca("BIC");
+        this.setModelo("Cristal");
+        this.setPonta(0.5f);
+        this.setTampada(true);
+        this.setCarga(100);
+    }
+
+    public void Caneta(String marca, String modelo, float ponta, boolean tampada, String material){
+        this.setModelo(modelo);
+        this.setMarca(marca);
+        this.setPonta(ponta);
+        this.setTampada(tampada);
+        this.setMaterial(material);
+    }
+
     //GETTERS
 
     public String getMarca(){
@@ -63,15 +81,12 @@ public class Caneta {
     public void setCarga(int carga){
         this.carga = carga;
     }
-    public void setTampa(boolean tampada){
+    public void setTampada(boolean tampada){
         this.tampada = tampada;
     }
     public void setMaterial(String material){
         this.material = material;
     }
-
-    public void setMaterial(){}
-
 
     void status() {
         System.out.println("Marca: " +this.marca);
