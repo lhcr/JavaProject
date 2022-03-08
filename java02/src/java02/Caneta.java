@@ -9,13 +9,13 @@ package java02;
  * @author Henrique
  */
 public class Caneta {
-   public String marca;
-   public String modelo;
-   public String cor;
-   private float ponta;
-   protected int carga;
-   private boolean tampada;
-   private String material;
+    String marca;
+    String modelo;
+    String cor;
+    float ponta;
+    int carga;
+    boolean tampada;
+    String material;
 
     void status() {
         System.out.println("Marca: " +this.marca);
