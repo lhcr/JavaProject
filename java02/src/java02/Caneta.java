@@ -9,13 +9,53 @@ package java02;
  * @author Henrique
  */
 public class Caneta {
-    String marca;
-    String modelo;
-    String cor;
-    float ponta;
-    int carga;
-    boolean tampada;
-    String material;
+    private String marca;
+    private String modelo;
+    public String cor;
+    private float ponta;
+    public int carga;
+    protected boolean tampada;
+    protected String material;
+
+    //GETTERS
+
+    public String getMarca(){
+        return this.marca;
+    }
+
+    public String getModelo(){
+        return this.modelo;
+    }
+
+    public String getCor(){
+        return this.cor;
+    }
+
+    public float getPonta(){
+        return this.ponta;
+    }
+
+    public int getCarga(){
+        return this.carga;
+    }
+
+    public boolean getTampada(){
+        return this.tampada;
+    }
+
+    public String getMaterial(){
+        return  this.material;
+    }
+
+    //SETTERS
+    public void setMarca(){}
+    public void setModelo(){}
+    public void setCor(){}
+    public void setPonta(){}
+    public void setCarga(){}
+    public void setTampa(){}
+    public void setMaterial(){}
+
 
     void status() {
         System.out.println("Marca: " +this.marca);
