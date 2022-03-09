@@ -27,13 +27,7 @@ public class Caneta {
         this.setCarga(100);
     }
 
-    public void Caneta(String marca, String modelo, float ponta, boolean tampada, String material){
-        this.setModelo(modelo);
-        this.setMarca(marca);
-        this.setPonta(ponta);
-        this.setTampada(tampada);
-        this.setMaterial(material);
-    }
+    //
 
     //GETTERS
 
