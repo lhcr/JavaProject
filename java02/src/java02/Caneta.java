@@ -19,7 +19,7 @@ public class Caneta {
 
 
     //CONSTRUTOR
-    public void Caneta(){
+    public Caneta(){
         this.setMarca("BIC");
         this.setModelo("Cristal");
         this.setPonta(0.5f);

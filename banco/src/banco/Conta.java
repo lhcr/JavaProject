@@ -8,6 +8,11 @@ public class Conta {
     private boolean status; //Aberta ou Fechada
 
     //CONSTRUTOR
+    public Conta(){
+        this.setSaldo(0);
+        this.setStatus(false);
+        this.setNumConta(1);
+    }
     
     //GETTER
     public int getNumConta(){
@@ -57,7 +62,7 @@ public class Conta {
         // CC + 50 reais se  CP + 150 reais
         this.setStatus(true);
         this.setTipo(tipo);
-        if (this.tipo== "CC"){
+        if (tipo== "CC"){
             this.setSaldo(50f);
         } else {
             this.setSaldo(150f);
@@ -67,9 +72,9 @@ public class Conta {
 
     public void fecharConta(int numConta){
         /*Não deve ter dinheiro na conta ou débito*/
-        if(this.saldo>0){
+        if(this.getSaldo()>0){
             System.out.println("Você possui saldo.");
-        } else if (this.saldo<0) {
+        } else if (this.getSaldo()<0) {
             System.out.println("Você seu saldo é "+this.saldo+", para encerra a conta você deve realizar um deposito neste valor.");
             // deseja realizar um deposito?
             //if(x="sim"){
@@ -84,9 +89,9 @@ public class Conta {
 
     public void depositar(int numConta, float valor){
         //status deve estar verdadeiro
-        if(this.status){
+        if(this.getStatus()){
             this.saldo+=valor;
-            System.out.println("Foi depositado RS" + valor + "\nAgora seu saldo é de R$" + this.saldo);
+            System.out.println("Foi depositado RS" + valor + "\nAgora seu saldo é de R$" + this.getSaldo());
 
         } else {
             System.out.println("Essa conta não foi encontrada.");
@@ -101,8 +106,8 @@ public class Conta {
         //status verdadeiro
         //deve ter saldo
         //saldo deve ser maior que o saque
-        if(this.status){
-            if(this.saldo>=valor){
+        if(this.getStatus()){
+            if(this.getSaldo()>=valor){
                 this.saldo-=valor;
             } else {
                 System.out.println("Sem saldo!");
@@ -117,13 +122,11 @@ public class Conta {
     public void pagarMensal(int numConta){
         //cobra do saldo
         //CC 12 reais, CP 20 reais
-        if(this.status){
-            if(this.saldo>=20){
-                if (this.tipo == "CC") {
-                    this.saldo -= 12f;
-                } else if (this.tipo == "CP") {
-                    this.saldo -= 20f;
-                }
+        if(this.getStatus()){
+            if (this.getTipo() == "CC") {
+                this.saldo -= 12f;
+            } else if (this.getTipo() == "CP") {
+                this.saldo -= 20f;
             }
         }
     }
