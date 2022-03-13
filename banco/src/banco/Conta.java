@@ -1,5 +1,6 @@
 package banco;
 
+
 public class Conta {
     public int numConta;
     protected String tipo; //Conta corrente (CC) ou Conta Poupança (CP)
@@ -55,6 +56,7 @@ public class Conta {
     public void setStatus(boolean status){
         this.status = status;
     }
+    
     //METODOS
     public void abrirConta(int numConta,String tipo){
         //mudar status para verdadeiro
@@ -91,7 +93,7 @@ public class Conta {
         //status deve estar verdadeiro
         if(this.getStatus()){
             this.saldo+=valor;
-            System.out.println("Foi depositado RS" + valor + "\nAgora seu saldo é de R$" + this.getSaldo());
+            System.out.println("Foi depositado R$" + valor + "\nAgora seu saldo é de R$" + this.getSaldo());
 
         } else {
             System.out.println("Essa conta não foi encontrada.");
@@ -128,6 +130,8 @@ public class Conta {
             } else if (this.getTipo() == "CP") {
                 this.saldo -= 20f;
             }
+        } else{
+            System.out.println("Conta não encontrada!")
         }
     }
 }
