@@ -4,5 +4,6 @@
     "java.test.editor.enableShortcuts": false,
     "java.project.sourcePaths": [
         "ufc/src/ufc"
-    ]
+    ],
+    "sqltools.connections": []
 }

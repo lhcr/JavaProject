@@ -118,6 +118,7 @@ public class Lutador implements ControladorLutador {
     public void setEmpates(int empates){
         this.empates = empates;
     }
+    
 
     //METODOS
     public void apresentar(){

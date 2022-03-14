@@ -53,6 +53,7 @@ public class Luta {
          * só pode acontecer se for aprovada
          * só pode vitória de ums dos lutadores ou empate
          */
+        System.out.println(l1);
         if(l1.getCategoria()==l2.getCategoria()){
             if(l1!=l2){
                 this.setAprovado(true);
@@ -73,7 +74,6 @@ public class Luta {
             desafiante.apresentar();
             Random aleatorio = new Random();
             int vencedor = aleatorio.nextInt(3);
-            //System.out.println(vencedor);
             switch (vencedor){
                 case 0:
                 System.out.println("Empate");

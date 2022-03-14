@@ -3,16 +3,27 @@
 public class principal {
     
     public static void main(String[] args){
-        Lutador l[] = new Lutador[6];
-        l[0] = new Lutador("Anderson Silva", 
+        Campeao c = new Campeao("Anderson Silva", 
                     "brasileiro",
                     46,
                     1.88f,
                     83.9f,
                     34,
                     9,
-                    1);
-        l[1] = new Lutador("Jon Jone", 
+                    1,
+                    11,
+                    true);
+                    
+        Lutador l[] = new Lutador[5];
+        l[0] = new Lutador("Daniel Cormier",
+                "estadunidense",
+                42,
+                1.80f,
+                114f,
+                22,
+                3,
+                1);
+        l[1] = new Lutador("Jon Jones", 
                     "estadunidense",
                     34,
                     1.93f,
@@ -53,9 +64,13 @@ public class principal {
                     8,
                     3);
 
+        c.apresentar();
         Luta UFC01 = new Luta();
         UFC01.marcarLuta(l[0],l[4]);
         UFC01.lutar();
+        Luta UFC02 = new Luta();
+        UFC02.marcarLuta(c, l[2]);
+        UFC02.lutar();
 
     }
 }
