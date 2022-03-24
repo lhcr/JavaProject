@@ -5,8 +5,9 @@ public class Aluno extends Pessoa{
     private String curso;
     
     public void cancelarMatricula(){
-        System.out.println("Matricula Cancelada");
+        System.out.println("Matricula de "+this.getNome()+" foi cancelada");
     }
+
     public int getMatricula() {
         return matricula;
     }

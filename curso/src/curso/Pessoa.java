@@ -1,21 +1,21 @@
-public abstract class Pessoa {
+public abstract class Pessoa {//classe abstrata não pode gerar objeto
     private String nome;
     private int idade;
     private String sexo;
 
-    public void fazerAniv(){
+    public final void fazerAniv(){// método não pode ser sobrescrito em suas subclasses
         this.setIdade(this.getIdade()+1);
     }
 
-    public String getNome() {
+    protected String getNome() {
         return nome;
     }
 
-    public int getIdade() {
+    protected int getIdade() {
         return idade;
     }
 
-    public String getSexo() {
+    protected String getSexo() {
         return sexo;
     }
 

@@ -9,12 +9,13 @@ public final class Bolsista extends Aluno{//classe FINAL não pode ter filhos
         this.bolsa = bolsa;
     }
 
-    public final void renovarBolsa(){//metodo final não pode ser sobreposto
+    public final void renovarBolsa(){//metodo final não pode ser sobrescrito por suas subclasses, é somente herdado.
         System.out.println("Bolsa renovada!");
     }
+    
     @Override//sobreposição de metodo
     public void pagarMensalidade(){
-        System.out.println("Bolsista - mensalidade paga!");
+        System.out.println("Bolsista "+this.getNome()+" - mensalidade paga!");
     }
     
 }

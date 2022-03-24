@@ -3,7 +3,7 @@
 
 //INTERFACE
 public interface Controlador {
-    public abstract void ligar();
+    public abstract void ligar(); //método abtract somente em classes abstratas ou interfaces
     public abstract void desligar();
     public abstract void abrirMenu();
     public abstract void fecharMenu();

@@ -5,8 +5,8 @@
     "java.project.sourcePaths": [
         "ufc/src/ufc",
         "java02/src/java02",
-        "java02/src/herança",
-        "curso/src/curso"
+        "curso/src/curso",
+        "java02/src/Darwin"
     ],
     "sqltools.connections": []
 }

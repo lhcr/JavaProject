@@ -7,7 +7,6 @@ public class Funcionario extends Pessoa{
             this.setTrabalhando(trabalhando);
         }
     }
-
     
     public String getSetor() {
         return this.setor;
