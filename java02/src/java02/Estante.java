@@ -1,4 +1,4 @@
-package java02;
+
 
 public class Estante {
     private float altura;

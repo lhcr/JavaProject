@@ -3,8 +3,8 @@ public abstract class Pessoa {
     private int idade;
     private String sexo;
 
-    public final fazerAniv(){
-
+    public void fazerAniv(){
+        this.setIdade(this.getIdade()+1);
     }
 
     public String getNome() {
@@ -33,8 +33,9 @@ public abstract class Pessoa {
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return super.toString();
+        
+        return "Pessoa{"+"nome= "+nome+" idade= "+idade+" sexo= "+sexo+"}";
     }
+
 
 }

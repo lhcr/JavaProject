@@ -1,6 +1,6 @@
-import javafx.animation.ScaleTransition;
 
-public class tecnico extends aluno{
+
+public class Tecnico extends Aluno{
     private int registroProfissional;
 
     public int getRegistroProfissional() {

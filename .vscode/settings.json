@@ -3,7 +3,10 @@
     "java.debug.settings.enableRunDebugCodeLens": false,
     "java.test.editor.enableShortcuts": false,
     "java.project.sourcePaths": [
-        "ufc/src/ufc"
+        "ufc/src/ufc",
+        "java02/src/java02",
+        "java02/src/herança",
+        "curso/src/curso"
     ],
     "sqltools.connections": []
 }

@@ -1,4 +1,4 @@
-import java02.javaDesafios.cadeira;
+//import java02.javaDesafios.cadeira;
 
 public class Java011 {
     
@@ -11,12 +11,12 @@ public class Java011 {
         nomes[1][0] = "Rosa";    //
         nomes[1][1]= "Silva";    //
 
-        for(String nome:nomes){//foreach
-            System.out.println(nome);
-        }
-        static String professor;//static impede a criaçao de instacias do objeto. OBS: um método static só pode acessar atributos statics
+       // for(String nome:nomes){//foreach
+        //    System.out.println(nome);
+       // }
+        //static String professor;//static impede a criaçao de instacias do objeto. OBS: um método static só pode acessar atributos statics
 
-        cadeira c = new cadeira();
+      //  cadeira c = new cadeira();
         ///////////////////////////////////////////////////////////
     }
 }

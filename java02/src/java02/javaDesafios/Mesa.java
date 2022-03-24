@@ -1,4 +1,4 @@
-package java02.javaDesafios;
+package javaDesafios;
 
 public class Mesa {
     String matTampo;
