@@ -22,5 +22,10 @@ public class Java012 {
         co.locomover();
         go.locomover();
         ta.locomover(); 
+
+        ca.reagir(11,45f);
+        ca.reagir("comida");
+        ca.reagir(true);
+        ca.reagir(5,)
     }
 }
