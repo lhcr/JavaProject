@@ -23,9 +23,9 @@ public class Java012 {
         go.locomover();
         ta.locomover(); 
 
-        ca.reagir(11,45f);
+        ca.reagir(11,45);
         ca.reagir("comida");
         ca.reagir(true);
-        ca.reagir(5,)
+        ca.reagir(5,10f);
     }
 }
