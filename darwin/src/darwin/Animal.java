@@ -1,8 +1,8 @@
 public abstract class Animal {
     //polimorfismo
-    float peso;
-    int idade;
-    int membros;
+    protected float peso;
+    protected int idade;
+    protected int membros;
 
     public float getPeso() {
         return peso;

@@ -63,7 +63,7 @@ public class Cachorro extends Lobo{
         }else if(idade>7 && peso<=5){
             this.rosnar();
         }else if(idade>7 && peso>=6){
-            System.out.println("Ignorando!");
+            System.out.format("Ignorando!");//format funciona igual ao println no entanto não pula linha
         }
     }
 }
